@@ -94,7 +94,7 @@ export default {
 
 ## getting to work in mono repo
 - redo steps above in frontend and backend
-- delete root package-lock as backend/frontend already have some of those dependencies above installed and us running those commands updated the versions. however the package lock's purpose is to lock existing dependency versions. we therefore need to delete package lock and run npm install at root to regenerate it with the new versions.
+- backend/frontend already have some of those dependencies above installed and us running those commands (npm i -D eslint for example) updated the versions in package.json. however the package-lock.json's purpose is to lock versions of dependencies and dependencies of dependencies. we therefore need to update the package lock and run `npm update` at root to update the package-lock with the new versions. Otherwise our application will use the old versions specified in the package-lock.
 -  reuse roots eslint in backend/frontend but give specific node or browser. for example backend. frontend do `...globals.browser` then delete the language options from the root config.
 ```
 import globals from "globals";

@@ -3,7 +3,7 @@
 - install
 	- `npm install -g lerna`
 - initialize monorepo
-	- lerna init
+	- `lerna init`
 - make a folder called "packages" in the root directory that will host backend and frontend
 - tell lerna where we will have our packages by adding this to lerna.json (and package.json if not there)
 	- `"packages": ["packages/*"]`
