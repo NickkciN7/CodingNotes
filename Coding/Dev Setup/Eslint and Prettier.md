@@ -70,7 +70,7 @@ eslint, globals, @eslint/js, typescript-eslint, eslint-plugin-react
 - now we need to add to the eslint.config.mjs so that it uses these new dev dependencies
 	- from https://github.com/prettier/eslint-plugin-prettier?tab=readme-ov-file#configuration-new-eslintconfigjs
 	- "this plugin ships with an eslint-plugin-prettier/recommended config that sets up both eslint-plugin-prettier and eslint-config-prettier in one go. Import eslint-plugin-prettier/recommended and add it as the last item in the configuration array in your eslint.config.js file so that eslint-config-prettier has the opportunity to override other configs:"
-	- We must import and add to the default export like (technically a bit different that above link as they are not using ECMAScript import but rather the old CommonJS require.' https://dev.to/rgolawski/how-to-make-eslint-and-prettier-work-together-2i5g shows it exactly as below )
+	- We must import and add to the default export like (technically a bit different than above link as they are not using ECMAScript import but rather the old CommonJS require.' https://dev.to/rgolawski/how-to-make-eslint-and-prettier-work-together-2i5g shows it exactly as below )
 ```
 import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
 
