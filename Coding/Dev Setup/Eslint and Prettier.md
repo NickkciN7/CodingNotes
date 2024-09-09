@@ -17,7 +17,7 @@
 }
 ```
 
-- also want in the dependencies of the project, so that everyone who uses the code will have the same versions and we can set up rules for example to block a git commit until they fix warnings. Important when collabing with people so everyone has the same setup.
+- also want in the dependencies of the project, not just vs code extensions, so that everyone who uses the code will have the same versions and we can set up rules for example to block a git commit until they fix warnings. Important when collabing with people so everyone has the same setup. Then vs code extensions will use the project settings.
 ## Eslint
 - to have eslint as dev dependency in package.json type in terminal (while in the directory of your react project) `npm install eslint --save-dev` or `npm i -D eslint` 
 	- dev depenencies are packages of code that only need to be used in the development phase, for example eslint shows bad code practices (but not necessarily illegal code) and we don't care about these warnings when we are running the app, it is only something that matters in the context of developing and typing code.
