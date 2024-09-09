@@ -1,0 +1,2 @@
+- peer dependencies
+	- https://stackoverflow.com/a/46060407
