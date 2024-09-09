@@ -36,13 +36,13 @@ eslint, globals, @eslint/js, typescript-eslint, eslint-plugin-react
 ✔ Would you like to install them now? · Yes
 ✔ Which package manager do you want to use? · npm
 ```
-- could add scripts to the package.json to easily lint or attempt to fix the linting issues.
+- could add scripts to the package.json to easily lint or attempt to fix the linting issues, not needed.
 ```
 "lint": "eslint .", 
 "lint:fix": "eslint . --fix",
 ```
 
-- ignore files for linting, add this to export default
+- can ignore files for linting, add this to export default in eslint for example. not needed.
 ```
 {ignores : ["eslint.config.mjs"]}
 ```
