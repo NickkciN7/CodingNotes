@@ -1,0 +1,3 @@
+- height is # edges along longest path from root to leaf, or deepest level in a tree index from 0
+- leaf node is one with no children
+- subtree has to have all its descendants to be subtree
