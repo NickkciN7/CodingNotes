@@ -1,5 +1,0 @@
-- can use breadth or depth first traversal
-- depth first search has 3 versions for binary trees
-	- Pre-order: current node before children
-	- In-order: left, current, right
-	- Post-order: current after children

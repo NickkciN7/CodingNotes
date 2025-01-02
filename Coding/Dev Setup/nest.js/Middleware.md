@@ -1,5 +1,0 @@
-- function called before route handler
-- have access to response and request
-- use configure() of module class to use middleware
-- can have functional middleware rather than class
-- not aware of execution context, including handler and any of its parameters, you just have generic response and request object

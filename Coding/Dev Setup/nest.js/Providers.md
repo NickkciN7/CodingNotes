@@ -1,7 +1,0 @@
-- can be injected as dependency; objects can create relationships with each other, and function of "wiring up" these object largely delegated to nest runtime
-- *controllers handle https requests, but more complex tasks done by providers*
-- plain js classes declared as providers in a module
-- services
-	- @Injectable() attaches metadata that declares the service as class that can be managed by Nest IoC (inversion of control https://stackoverflow.com/questions/3058/what-is-inversion-of-control) container
-- can make provider lifetime request scoped, rather than application life scoped (close app destroys providers finally for example)
-- register provider in the module file just like controllers

@@ -1,4 +1,0 @@
-- peer dependencies
-	- https://stackoverflow.com/a/46060407
-- tsc compiles all ts files in directory using types from project. if you do tsc on a specific file it doesn't use the project types.
-	- need tsc --project filename to use the project files
