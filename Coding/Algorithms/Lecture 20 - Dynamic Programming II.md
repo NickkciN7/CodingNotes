@@ -27,6 +27,7 @@ private static int pickTrees(int[] arr, int index) {
 	4. Return the correct value from your table
 
 ![[Screenshot 2024-11-09 200008.png]]
+![Description](https://github.com/NickkciN7/CodingNotes/blob/main/Screenshot%202024-11-09%20200008.png)
 ## Greedy vs. Dynamic Programming
 - Both Greedy and Dynamic Programming solve optimization problems
 - I.e. "find the shortest path", "find the best outfit", "find the biggest profit", etc.
@@ -41,12 +42,13 @@ private static int pickTrees(int[] arr, int index) {
 ## Bellman-Ford
 
 ![[Pasted image 20241109201505.png]]
-
+![Description](https://github.com/NickkciN7/CodingNotes/blob/main/Pasted%20image%2020241109201505.png)
 - dijskta fails with negative edges, because it is greedy we never update `dist[C]` after visiting `D`
 - Bellman Ford accounts for negative edges and is a DP algorithm
 - Bellman actually created phrase "Dynamic Programming"
 
 ![[Pasted image 20241109202013.png]]
+![Description](https://github.com/NickkciN7/CodingNotes/blob/main/Pasted%20image%2020241109202013.png)
 - I don't agree with what he says runtime of dijsktra is, see my notes in [[Lecture 15 - Weighted Graphs and Dijkstra's]]
 
 - Videos assigned by teacher relating to Bellman:
@@ -61,3 +63,4 @@ private static int pickTrees(int[] arr, int index) {
 - A row represents the best value combination of bars (only bars index i or less), that can fit in bag of weight column number. For example, index 1 (0 row and column are empty placeholders to make algorithm work easier, 1 is actual first bar), represents choosing bar 1 and only considering bar 1. It has weight 4 and value 3. So we set column 4 (weight 4) to 12, which is `4*3`. Next row, bar 2 of count 10, can't fit, so just copy previous row, which once again is done to make algorithm work easier (so we can add values from previous row to current bar value if the counts added together can fit in the bag). Next bar 3 with count 2 and value 5. It is the best choice for weight 2 and 3 at total value of `2*5=10`. we can say 3 also even though the weight is 2 because our algorithm allows values to represent any weight value, regardless of if it is exactly that weight. Because at the end of the day, if we want the most valuable bar we can fit, we don't care if our bag isn't reaching its max weight, if anything this would make travelling easier lol. And since we can fit bar 1 of total value 12 into weight 4, this is better than 10, and therefore 12 remains best value at weight 4. Finally the last bar: count 1, value 10, total value `1*10=10`. It is best value at weight 1, same value for weight 2, but we can combine bar 3 and 4 for total weight of 3, adding 10 and 10, to get 20 there. And this also replaces at weight 4.
 
  ![[Pasted image 20241126223925.png]]
+ ![Description](https://github.com/NickkciN7/CodingNotes/blob/main/Pasted%20image%2020241126223925.png)
