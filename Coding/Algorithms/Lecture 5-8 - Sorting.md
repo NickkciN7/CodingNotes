@@ -9,6 +9,7 @@
 - see `lecture/sorting/merge.ts`
 
 ![[Screenshot 2024-11-25 153531.png]]
+![Description][(https://github.com/NickkciN7/CodingNotes/blob/main/Pasted%20image%2020241123172459.png](https://github.com/NickkciN7/CodingNotes/blob/main/Screenshot%202024-11-25%20153531.png))
 ## Heap Sort
 ### Heap
 - binary tree
