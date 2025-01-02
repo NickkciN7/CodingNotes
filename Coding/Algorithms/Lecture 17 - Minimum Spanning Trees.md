@@ -46,6 +46,7 @@ algorithm Prims
 	- "In lecture 25 (https://www.youtube.com/watch?v=4jJbh5q4j-8&ab_channel=AndrewHuang) at 27:57 it says that we don't update C because its cost is already 1.  But on the left you can see that C's cost is actually 3.  Is this a mistake?  If so, then what step should the algorithm actually take at that point?"
 	- So Prim's alg should first update C, F, U costs. Then select C as it has lowest cost. Then update U and E. Select U next as it has lowest cost now (1). Look at U's neighbors and update. Of course we can update D, but what about C. Without the H.contains, we could still update it, and then we have no connection from S to U OR to C making it disconnected. We should have that H.contains so we don't overwrite an edge to C. Basically once a node has been set as being in the MST and the edge was chosen (already removed from queue), then we NEVER modify it again. This is in line with the fact Prim's is a greedy algorithm, meaning we stick with our decision that we made before.
 ![[Pasted image 20241126205832.png]]
+![Description](https://github.com/NickkciN7/CodingNotes/blob/main/Pasted%20image%2020241126205832.png)
 - same runtime as in [[Lecture 15 - Weighted Graphs and Dijkstra's]]
 - quoting the end of runtime analysis in particular
 	- putting together
