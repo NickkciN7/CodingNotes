@@ -5,7 +5,7 @@
 
 ![[Pasted image 20241123172459.png]]
 
-![Description](Pasted image 20241123172459.png)
+![Description](../Pasted image 20241123172459.png)
 
 - constraint satisfaction problem
 	- problems that have requirements
