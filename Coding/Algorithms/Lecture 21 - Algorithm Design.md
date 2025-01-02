@@ -9,7 +9,7 @@
 - Is there a dumb trick I should look out for?
 
 ![[Pasted image 20241110201310.png]]
-
+![Description](https://github.com/NickkciN7/CodingNotes/blob/main/Pasted%20image%2020241110201310.png)
 - ignore the fact he made the heap k+2 size he made a mistake but it still helps visualize what is going on. The blue part describing algorithm and purple part showing runtime is accurate though.
 - `(N + (N-k))*log(K+1)`
 	- N because you add to heap N times,
@@ -22,5 +22,5 @@
 
 
 ![[Pasted image 20241114224437.png]]
-
+![Description](https://github.com/NickkciN7/CodingNotes/blob/main/Pasted%20image%2020241114224437.png)
 - since left/right has higher priority than up/down, we sort x coordinate last because that means it is ordered for left/right afterwards, with up/down being the tie breaker ordering for same left/right valued elements.
